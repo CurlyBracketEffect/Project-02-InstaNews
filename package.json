@@ -1,0 +1,17 @@
+{
+  "name": "project-02-instanews",
+  "version": "1.0.0",
+  "description": "App which calls the NY Times API in order to serve up relevant top news stories",
+  "main": "Populate with returned Sections.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-uglify": "^3.0.1"
+  }
+}

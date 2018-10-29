@@ -1,0 +1,120 @@
+@font-face {
+  font-family: "OpenSans-Light";
+  src: url("../assets/fonts/OpenSans-Light.ttf"); }
+
+@font-face {
+  font-family: "OpenSans-Light-Italic";
+  src: url("../assets/fonts/OpenSans-LightItalic.ttf"); }
+
+@font-face {
+  font-family: "OpenSans-Bold";
+  src: url("../assets/fonts/OpenSans-Bold.ttf"); }
+
+@font-face {
+  font-family: "OpenSans-Bold-Italic";
+  src: url("../assets/fonts/OpenSans-Bold-Italic.ttf"); }
+
+body {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  font-family: OpenSans-Light;
+  background-color: black;
+  color: white; }
+  body header {
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 60px; }
+    body header #logo {
+      align-self: center;
+      width: 21rem; }
+    body header div {
+      display: flex;
+      flex-direction: column; }
+      body header div select {
+        align-self: center;
+        font-size: 16px;
+        font-family: OpenSans-Bold; }
+      body header div p {
+        font-size: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        text-align: center; }
+  body #loader {
+    width: 15%;
+    align-self: center; }
+  body #grid {
+    display: grid;
+    height: auto;
+    width: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(12, 1fr); }
+    body #grid div {
+      position: relative;
+      display: flex;
+      height: 67vh;
+      width: 100%;
+      justify-content: center; }
+      body #grid div:hover h1 {
+        transform-origin: 0 bottom 0;
+        transition: transform 2s linear;
+        transform: scale(1, 0); }
+      body #grid div img {
+        width: 100%;
+        height: 100%;
+        z-index: -1; }
+      body #grid div h1 {
+        transform-origin: 0 bottom 0;
+        transform: scale(1, 1);
+        transition: transform 2s linear;
+        padding: 13px;
+        background-color: rgba(0, 0, 0, 0.5);
+        position: absolute;
+        align-self: flex-end;
+        font-family: OpenSans-Light;
+        font-size: 16px;
+        line-height: 20px; }
+  body footer {
+    color: #c2c2c2;
+    font-family: OpenSans-Light;
+    margin-bottom: 5%;
+    margin-top: 5%; }
+
+@media only screen and (min-width: 768px) {
+  body header {
+    flex-direction: row; }
+    body header #logo {
+      width: 16rem; }
+    body header div {
+      justify-content: center; }
+      body header div select {
+        margin-top: 10px; }
+  body #grid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr); } }
+
+@media only screen and (min-width: 1240px) {
+  body header {
+    align-self: flex-start;
+    flex-direction: row; }
+    body header #logo {
+      margin-left: 28px;
+      width: 17rem; }
+    body header div {
+      justify-content: center;
+      margin-left: 70px; }
+      body header div select {
+        margin-top: 10px; }
+  body #grid {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr); }
+  body footer {
+    width: 100%; }
+    body footer p {
+      margin-left: 42px; } }
+
+* {
+  border: 1px solid white !important; }
