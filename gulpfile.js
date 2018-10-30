@@ -28,16 +28,16 @@ gulp.task('copyAss', function(){
 
 //optimize images
 
-// gulp.task('imageMin', function(){
-//     gulp.src('src/images/*')
-//     .pipe(imagemin())
-//     .pipe(gulp.dest('dist/images'))
-// });
-gulp.task('imageMin', () =>
+gulp.task('imageMin', function(){
     gulp.src('src/images/*')
     .pipe(imagemin())
     .pipe(gulp.dest('dist/images'))
-    );
+});
+// gulp.task('imageMin', () =>
+//     gulp.src('src/images/*')
+//     .pipe(imagemin())
+//     .pipe(gulp.dest('dist/images'))
+//     );
 
 //Minify JS
 gulp.task('minify', function(){
