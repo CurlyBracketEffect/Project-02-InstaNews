@@ -26,3 +26,4 @@ Things that I would like to improve:
 - There is some weird behaviour when resizing the viewport after the page has been populated with articles that I would like to address
 - I would like to go through and clean up my code by simplifying some steps, and removing some code.
 - Im getting a non-critical error when loading the Open Sans Bold font that I would like to solve
+- My images look a little skewed in some cases, So I would like to go back and fix how they are displayed
